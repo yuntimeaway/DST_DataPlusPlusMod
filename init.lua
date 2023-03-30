@@ -6,7 +6,11 @@ modimport("postinit/my_tuning")
 local prefabs_post = 
 {
     "hambat",
+    "nightsword",
     "footballhat",
+    "armorwood",
+    "armorgrass",
+    
 }
 
 
