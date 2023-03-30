@@ -1,0 +1,13 @@
+
+TUNING = GLOBAL.TUNING
+
+
+TUNING.DPP =
+{
+    --猪皮头盔 减伤比例
+    DPP_ARMOR_FOOTBALLHAT_ABSORPTION = 0.4,
+    --火腿棒 攻击力
+    DPP_HAMBAT_DAMAGE = 46,
+}
+
+
