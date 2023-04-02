@@ -1,7 +1,7 @@
 
 TUNING = GLOBAL.TUNING
 
-
+--在全局TUNING表中添加mod自定义的数据表
 TUNING.DPP =
 {
     --猪皮头盔 减伤比例
@@ -10,6 +10,8 @@ TUNING.DPP =
     DPP_ARMORWOOD_ABSORPTION = 0.6,
     --草甲 减伤比例
     DPP_ARMORGRASS_ABSORPTION = 0.4,
+
+    
     --火腿棒 攻击力
     DPP_HAMBAT_DAMAGE = 46,
     --影刀 攻击力
