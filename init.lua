@@ -9,6 +9,7 @@ modimport("postinit/init_recipes")
 --导入对游戏内容初始化具体处理部分的文件名,后续用for处理
 local prefabs_post = 
 {
+    --武器
     "hambat",
     "nightsword",
     "batbat",
@@ -17,9 +18,22 @@ local prefabs_post =
     "whip",
     "boomerang",
     "blowdart",
+
+    --防具
     "footballhat",
     "armorwood",
     "armorgrass",
+    "wathgrithrhat",
+    "armormarble",
+    "armordragonfly",
+    "ruinshat",
+    "armorruins",
+
+    --背包
+    "backpack",
+
+    --火把
+    "torch",
     
 }
 
