@@ -46,6 +46,15 @@ env.AddRecipePostInit("spear_wathgrithr",function(self)
     end
 end)
 
+--修改女武神头盔配方为2个金块和2个石头和1个绳子
+env.AddRecipePostInit("wathgrithrhat",function(self)
+    --判断女武神头盔配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("goldnugget", 2), Ingredient("rocks", 2), Ingredient("rope",1)}
+    end
+end)
+
+
 ---------------------------------------------------------------------------------------------------------
 --blowdart_pipe
 --修改吹箭配方为1个草笛和2个石头和1个乌鸦羽毛
@@ -80,4 +89,35 @@ env.AddRecipe2(
     {"WEAPONS","MODS"})
 ---------------------------------------------------------------------------------------------------------
 
+env.AddRecipePostInit("armor_sanity",function(self)
+    --判断魂甲配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("nightmarefuel", 4),Ingredient("papyrus", 1),Ingredient("rope",1)}
+    end
+end)
 
+
+---------------------------------------------------------------------------------------------------------
+
+env.AddRecipePostInit("lantern",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("twigs", 3), Ingredient("rope", 2), Ingredient("lightbulb", 2),Ingredient("redgem", 1)}
+    end
+end)
+
+env.AddRecipe2(
+    "lantern1",
+    {Ingredient("twigs", 3), Ingredient("rope", 2), Ingredient("lightbulb", 2),Ingredient("bluegem", 1)},
+    TECH.SCIENCE_TWO,
+    {product = "lantern",numtogive = 1},
+    {"LIGHT","MODS"})
+
+---------------------------------------------------------------------------------------------------------
+
+env.AddRecipePostInit("molehat",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("mole", 2), Ingredient("transistor", 2), Ingredient("wormlight", 1),Ingredient("purplegem", 1)}
+    end
+end)

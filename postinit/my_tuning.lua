@@ -10,6 +10,14 @@ TUNING.DPP =
     DPP_ARMORWOOD_ABSORPTION = 0.6,
     --草甲 减伤比例
     DPP_ARMORGRASS_ABSORPTION = 0.4,
+    --女武神头盔 减伤比例
+    DPP_ARMOR_WATHGRITHRHAT_ABSORPTION = 0.6,
+    --大理石甲 减伤比例
+    DPP_ARMORMARBLE_ABSORPTION = 0.8,
+    --铥矿头盔 减伤比例
+    DPP_ARMOR_RUINSHAT_ABSORPTION = 0.75,
+    --铥矿甲 减伤比例
+    DPP_ARMORRUINS_ABSORPTION =0.75,
 
     
     --火腿棒 攻击力
@@ -33,6 +41,9 @@ TUNING.DPP =
     DPP_RUINS_BAT_USES = 180,
     --皮鞭 使用次数
     DPP_WHIP_USES = 130,
+
+    --大理石甲 移动速度
+    DPP_ARMORMARBLE_WALKSPEEDMULT = 0.8,
 }
 
 
