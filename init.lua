@@ -28,6 +28,7 @@ local prefabs_post =
     "armordragonfly",
     "ruinshat",
     "armorruins",
+    "armorsanity",
 
     --背包
     "backpack",
