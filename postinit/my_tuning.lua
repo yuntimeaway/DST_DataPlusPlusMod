@@ -18,6 +18,8 @@ TUNING.DPP =
     DPP_ARMOR_RUINSHAT_ABSORPTION = 0.75,
     --铥矿甲 减伤比例
     DPP_ARMORRUINS_ABSORPTION =0.75,
+    --魂甲 减伤比例
+    DPP_ARMOR_SANITY_ABSORPTION=0.7,
 
     
     --火腿棒 攻击力
