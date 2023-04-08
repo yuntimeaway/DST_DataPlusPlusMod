@@ -121,3 +121,23 @@ env.AddRecipePostInit("molehat",function(self)
         GetValidRecipe(self.name).ingredients={Ingredient("mole", 2), Ingredient("transistor", 2), Ingredient("wormlight", 1),Ingredient("purplegem", 1)}
     end
 end)
+
+
+---------------------------------------------------------------------------------------------------------
+
+env.AddRecipePostInit("heatrock",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("rocks", 8),Ingredient("pickaxe", 1), Ingredient("flint", 2)}
+    end
+end)
+
+
+---------------------------------------------------------------------------------------------------------
+env.AddRecipePostInit("whip",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("coontail", 2), Ingredient("tentaclespots", 1)}
+    end
+end)
+
