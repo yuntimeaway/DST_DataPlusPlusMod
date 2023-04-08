@@ -35,6 +35,9 @@ local prefabs_post =
     "armorruins",
     "armorsanity",
 
+    --BOSS
+    "deerclops",
+
     --背包
     "backpack",
 
