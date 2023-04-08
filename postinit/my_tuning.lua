@@ -47,6 +47,9 @@ TUNING.DPP =
     --大理石甲 移动速度
     DPP_ARMORMARBLE_WALKSPEEDMULT = 0.8,
 
+    --巨鹿 攻击力
+    DPP_DEERCLOPS_DAMAGE = 180,
+
 
     --肉丸 饱食度
     DPP_MEATBALLS_HUNGER = 52,
