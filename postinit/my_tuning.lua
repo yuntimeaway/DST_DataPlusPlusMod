@@ -51,8 +51,8 @@ TUNING.DPP =
     DPP_DEERCLOPS_DAMAGE = 180,
 
 
-    --肉丸 饱食度
-    DPP_MEATBALLS_HUNGER = 52,
+
+
 }
 
 
