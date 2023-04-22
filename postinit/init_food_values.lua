@@ -57,18 +57,46 @@ foods.unagi.perishtime = TUNING.PERISH_PRESERVED
 --舒缓茶
 foods.sweettea.perishtime = TUNING.PERISH_MED
 
+--酸橘汁腌鱼
+foods.ceviche.hunger = 45
+
+--加州卷
+foods.californiaroll.hunger = 75
+
+--素食堡
+foods.leafymeatburger.perishtime = TUNING.PERISH_MED
+
+--酿鱼头
+foods.barnaclestuffedfishhead.hunger = 120
+foods.barnaclestuffedfishhead.perishtime = TUNING.PERISH_MED
+
+--海鲜大排档
+foods.surfnturf.hunger = 80
+
+
 
 ------------------------------------------------------------------------------
 --注意填入的prefab的名称在游戏存在，不然无效，然后便是对应的组件名称和组件内属性名称（可是函数）需要和对应的名称一样，不然修改不上属性
 local MeatAndVeggies = 
 {
     --肉类
+    --大肉
+    meat = 
+    {
+        edible = {hungervalue = 15},
+    },
     --烤熟的大肉
     cookedmeat = --prefab的名称在游戏存在，不然无效
     {
         --其下对应的组件名称 以及 组件内属性名称（可是函数）如 hungervalue=xxx 需要和对应的名称一样，不然修改不上属性
         edible = {hungervalue = TUNING.CALORIES_MEDSMALL,sanityvalue = TUNING.SANITY_TINY },
     },
+    --小肉
+    smallmeat = 
+    {
+        edible = {hungervalue = 10 },
+    },
+    
 
     --蔬菜
     --浆果
@@ -81,7 +109,30 @@ local MeatAndVeggies =
     {
         edible = {hungervalue = 10,sanityvalue = 5 ,healthvalue = 0},
     },
+    --胡萝卜
+    carrot =
+    {
+        edible = {hungervalue = 8,sanityvalue = -5 },
+    },
+    --多汁浆果
+    berries_juicy =
+    {
+        edible = {hungervalue = 5},
+    },
 
+    --蘑菇
+    --绿蘑菇
+    green_cap =
+    {
+        edible = {hungervalue = 5},
+    },
+    --蓝蘑菇
+    blue_cap =
+    {
+        edible = {hungervalue = 5,healthvalue = 10},
+    },
+
+    --蝴蝶翅膀
     butterflywings = 
     {
         edible = {healthvalue = 3,hungervalue = 0},
