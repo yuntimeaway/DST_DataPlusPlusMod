@@ -40,9 +40,11 @@ local prefabs_post =
 
     --背包
     "backpack",
-
     --火把
     "torch",
+
+    --花
+    "flower",
     
 }
 

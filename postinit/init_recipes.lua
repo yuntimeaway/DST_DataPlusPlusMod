@@ -88,7 +88,7 @@ env.AddRecipe2(
     {product = "blowdart_pipe",numtogive = 2},
     {"WEAPONS","MODS"})
 ---------------------------------------------------------------------------------------------------------
-
+--修改魂甲配方为四个梦魇燃料，一个草砂纸，一个绳子
 env.AddRecipePostInit("armor_sanity",function(self)
     --判断魂甲配方在全局配方表中是否存在
     if  IsRecipeValid(self.name) then
@@ -98,14 +98,14 @@ end)
 
 
 ---------------------------------------------------------------------------------------------------------
-
+--修改提灯配方为三个树枝，两个绳子，两个荧光果，一个红宝石
 env.AddRecipePostInit("lantern",function(self)
     --判断配方在全局配方表中是否存在
     if  IsRecipeValid(self.name) then
         GetValidRecipe(self.name).ingredients={Ingredient("twigs", 3), Ingredient("rope", 2), Ingredient("lightbulb", 2),Ingredient("redgem", 1)}
     end
 end)
-
+--添加提灯配方为三个树枝，两个绳子，两个荧光果，一个蓝宝石
 env.AddRecipe2(
     "lantern1",
     {Ingredient("twigs", 3), Ingredient("rope", 2), Ingredient("lightbulb", 2),Ingredient("bluegem", 1)},
@@ -114,7 +114,7 @@ env.AddRecipe2(
     {"LIGHT","MODS"})
 
 ---------------------------------------------------------------------------------------------------------
-
+--修改鼹鼠帽配方为两个鼹鼠，两个电子元件，一个发光浆果，一个紫宝石
 env.AddRecipePostInit("molehat",function(self)
     --判断配方在全局配方表中是否存在
     if  IsRecipeValid(self.name) then
@@ -124,7 +124,7 @@ end)
 
 
 ---------------------------------------------------------------------------------------------------------
-
+--修改暖石配方为八个石头，一个镐子，两个燧石
 env.AddRecipePostInit("heatrock",function(self)
     --判断配方在全局配方表中是否存在
     if  IsRecipeValid(self.name) then
@@ -134,10 +134,13 @@ end)
 
 
 ---------------------------------------------------------------------------------------------------------
+--修改皮鞭配方为两个猫尾，一个触手皮
 env.AddRecipePostInit("whip",function(self)
     --判断配方在全局配方表中是否存在
     if  IsRecipeValid(self.name) then
         GetValidRecipe(self.name).ingredients={Ingredient("coontail", 2), Ingredient("tentaclespots", 1)}
     end
 end)
+
+---------------------------------------------------------------------------------------------------------
 
