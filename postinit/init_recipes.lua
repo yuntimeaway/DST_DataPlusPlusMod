@@ -143,4 +143,50 @@ env.AddRecipePostInit("whip",function(self)
 end)
 
 ---------------------------------------------------------------------------------------------------------
+--种子袋
+env.AddRecipePostInit("seedpouch",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("slurtle_shellpieces", 2), Ingredient("rope", 4),
+                                                 Ingredient("seeds", 2),Ingredient("Papyrus", 2),Ingredient("twigs", 6)}
+    end
+end)
+
+---------------------------------------------------------------------------------------------------------
+--保鲜背包
+env.AddRecipePostInit("icepack",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("bearger_fur", 1), Ingredient("gears", 2), Ingredient("transistor", 2)}
+    end
+end)
+
+---------------------------------------------------------------------------------------------------------
+--独奏乐器
+env.AddRecipePostInit("onemanband",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("goldnugget", 2),Ingredient("nightmarefuel", 3),Ingredient("pigskin", 1)}
+    end
+end)
+
+---------------------------------------------------------------------------------------------------------
+--雨帽
+env.AddRecipePostInit("rainhat",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("mole", 1), Ingredient("strawhat", 1), Ingredient("boneshard", 2),Ingredient("tentaclespots", 1)}
+    end
+end)
+
+---------------------------------------------------------------------------------------------------------
+--牛角帽
+env.AddRecipePostInit("beefalohat",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("beefalowool", 8),Ingredient("horn", 1),Ingredient("rope",2)}
+    end
+end)
+
+
 
