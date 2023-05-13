@@ -45,6 +45,20 @@ local prefabs_post =
 
     --花
     "flower",
+
+    --种子袋
+    "seedpouch",
+
+    --独奏乐器
+    "onemanband",
+
+    "armorslurper",
+
+    "tophat",
+
+    "rainhat",
+
+    "catcoonhat",
     
 }
 

@@ -50,6 +50,11 @@ TUNING.DPP =
     --巨鹿 攻击力
     DPP_DEERCLOPS_DAMAGE = 180,
 
+    --种子袋腐烂速度
+    DPP_SEEDPOUCH_PERISH_RATE = 1/3,
+
+    --饥饿腰带 减伤比例
+    DPP_ARMORSLURPER_ABSORPTION = 0.2
 
 
 
