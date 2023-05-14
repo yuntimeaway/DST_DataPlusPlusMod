@@ -72,3 +72,149 @@ containers.params.tophat =
     issidewidget = true,
     openlimit = 1,
 }
+
+
+--雨衣
+containers.params.raincoat =
+{
+    widget =
+    {
+        slotpos = {},
+        animbank = "ui_icepack_2x3",
+        animbuild = "ui_icepack_2x3",
+        pos = Vector3(-5, -70, 0),
+    },
+    issidewidget = true,
+    type = "pack",
+    openlimit = 1,
+}
+
+for y = 0, 2 do
+    table.insert(containers.params.raincoat.widget.slotpos, Vector3(-162, -75 * y + 75, 0))
+    table.insert(containers.params.raincoat.widget.slotpos, Vector3(-162 + 75, -75 * y + 75, 0))
+end
+
+--犬牙背心
+containers.params.sweatervest =
+{
+    widget =
+    {
+        slotpos = {},
+        animbank = "ui_backpack_2x4",
+        animbuild = "ui_backpack_2x4",
+        --pos = Vector3(-5, -70, 0),
+        pos = Vector3(-5, -80, 0),        
+    },
+    issidewidget = true,
+    type = "pack",
+    openlimit = 1,
+}
+
+for y = 0, 3 do
+    table.insert(containers.params.sweatervest.widget.slotpos, Vector3(-162, -75 * y + 114, 0))
+    table.insert(containers.params.sweatervest.widget.slotpos, Vector3(-162 + 75, -75 * y + 114, 0))
+end
+
+
+--松软和透气背心
+containers.params.trunkvest_summer =
+{
+    widget =
+    {
+        slotpos = {},
+        animbank = "ui_icepack_2x3",
+        animbuild = "ui_icepack_2x3",
+        pos = Vector3(-5, -70, 0),
+    },
+    issidewidget = true,
+    type = "pack",
+    openlimit = 1,
+}
+
+for y = 0, 2 do
+    table.insert(containers.params.trunkvest_summer.widget.slotpos, Vector3(-162, -75 * y + 75, 0))
+    table.insert(containers.params.trunkvest_summer.widget.slotpos, Vector3(-162 + 75, -75 * y + 75, 0))
+end
+
+containers.params.trunkvest_winter =
+{
+    widget =
+    {
+        slotpos = {},
+        animbank = "ui_icepack_2x3",
+        animbuild = "ui_icepack_2x3",
+        pos = Vector3(-5, -70, 0),
+    },
+    issidewidget = true,
+    type = "pack",
+    openlimit = 1,
+}
+
+for y = 0, 2 do
+    table.insert(containers.params.trunkvest_winter.widget.slotpos, Vector3(-162, -75 * y + 75, 0))
+    table.insert(containers.params.trunkvest_winter.widget.slotpos, Vector3(-162 + 75, -75 * y + 75, 0))
+end
+
+
+--清凉夏装
+containers.params.reflectivevest =
+{
+    widget =
+    {
+        slotpos =
+        {
+            Vector3(-35,                 20, 0),
+            Vector3(-35 + 75,            20, 0),
+            Vector3(-35,                -55, 0),
+            Vector3(-35 + 75,           -55, 0),
+        },
+        animbank = "ui_bundle_2x2",
+        animbuild = "ui_bundle_2x2",
+        pos = Vector3(-100, -75, 0),
+    },    
+    issidewidget = true,
+    type = "pack",
+    openlimit = 1,
+}
+
+--花衬衫
+containers.params.hawaiianshirt =
+{
+    widget =
+    {
+        slotpos = {},
+        animbank = "ui_icepack_2x3",
+        animbuild = "ui_icepack_2x3",
+        pos = Vector3(-5, -70, 0),
+    },
+    issidewidget = true,
+    type = "pack",
+    openlimit = 1,
+}
+
+for y = 0, 2 do
+    table.insert(containers.params.hawaiianshirt.widget.slotpos, Vector3(-162, -75 * y + 75, 0))
+    table.insert(containers.params.hawaiianshirt.widget.slotpos, Vector3(-162 + 75, -75 * y + 75, 0))
+end
+
+
+--熊皮背心
+containers.params.beargervest =
+{
+    widget =
+    {
+        slotpos = {},
+        animbank = "ui_backpack_2x4",
+        animbuild = "ui_backpack_2x4",
+        --pos = Vector3(-5, -70, 0),
+        pos = Vector3(-5, -80, 0),        
+    },
+    issidewidget = true,
+    type = "pack",
+    openlimit = 1,
+}
+
+for y = 0, 3 do
+    table.insert(containers.params.beargervest.widget.slotpos, Vector3(-162, -75 * y + 114, 0))
+    table.insert(containers.params.beargervest.widget.slotpos, Vector3(-162 + 75, -75 * y + 114, 0))
+end

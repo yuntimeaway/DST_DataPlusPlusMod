@@ -59,6 +59,26 @@ local prefabs_post =
     "rainhat",
 
     "catcoonhat",
+
+    "antlionhat",
+
+    "watermelonhat",
+
+    "icehat",
+
+    "featherhat",
+
+    "raincoat",
+
+    "sweatervest",
+
+    "trunkvest",
+
+    "reflectivevest",
+
+    "hawaiianshirt",
+
+    "beargervest"
     
 }
 
