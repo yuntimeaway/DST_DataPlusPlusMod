@@ -188,5 +188,38 @@ env.AddRecipePostInit("beefalohat",function(self)
     end
 end)
 
+---------------------------------------------------------------------------------------------------------
+--刮地皮头盔
+env.AddRecipePostInit("antlionhat",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("beefalowool", 8), Ingredient("pigskin", 4), Ingredient("townportaltalisman", 3)}
+    end
+end)
 
+---------------------------------------------------------------------------------------------------------
+--松软背心
+env.AddRecipePostInit("trunkvest_winter",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("trunk_winter", 1),Ingredient("silk", 8), Ingredient("beefalowool", 4),Ingredient("bluegem", 1)}
+    end
+end)
 
+---------------------------------------------------------------------------------------------------------
+--清凉夏装
+env.AddRecipePostInit("reflectivevest",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("rope", 1), Ingredient("feather_robin", 2), Ingredient("pigskin", 1)}
+    end
+end)
+
+---------------------------------------------------------------------------------------------------------
+--熊皮背心
+env.AddRecipePostInit("beargervest",function(self)
+    --判断配方在全局配方表中是否存在
+    if  IsRecipeValid(self.name) then
+        GetValidRecipe(self.name).ingredients={Ingredient("bearger_fur", 1), Ingredient("sweatervest", 1), Ingredient("rope", 2),Ingredient("redgem", 1)}
+    end
+end)

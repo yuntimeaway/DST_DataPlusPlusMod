@@ -43,6 +43,8 @@ TUNING.DPP =
     DPP_RUINS_BAT_USES = 180,
     --皮鞭 使用次数
     DPP_WHIP_USES = 130,
+    --刮地皮头盔 使用次数
+    DPP_ANTLIONHAT_USES = 500,
 
     --大理石甲 移动速度
     DPP_ARMORMARBLE_WALKSPEEDMULT = 0.8,
@@ -54,7 +56,10 @@ TUNING.DPP =
     DPP_SEEDPOUCH_PERISH_RATE = 1/3,
 
     --饥饿腰带 减伤比例
-    DPP_ARMORSLURPER_ABSORPTION = 0.2
+    DPP_ARMORSLURPER_ABSORPTION = 0.2,
+
+    --犬牙背心 保暖效果
+    DPP_INSULATION_SWEATERVEST = 90,
 
 
 
