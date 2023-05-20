@@ -37,6 +37,23 @@ local prefabs_post =
 
     --BOSS
     "deerclops",
+    "moose",
+    "antlion",
+    "bearger",
+    "beequeen",
+    "malbatross",
+    "Klaus",
+    "minotaur",
+
+    --生物
+    "spat",
+    "warg",
+    "leif",
+    "deciduoustrees",
+    "spiderqueen",
+    "dragonfly",
+    "pigman",
+    "spider",
 
     --背包
     "backpack",
