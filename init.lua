@@ -54,6 +54,12 @@ local prefabs_post =
     "dragonfly",
     "pigman",
     "spider",
+    "frog",
+    "hound",
+    "bunnyman",
+    "merm",
+    "knight_bishop",
+    "rabbit",
 
     --背包
     "backpack",
