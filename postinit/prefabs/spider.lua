@@ -57,7 +57,7 @@ for i, SpiderName in ipairs(SpiderNames) do
             inst.components.lootdropper:AddRandomLoot("cutreeds", 4)
             inst.components.lootdropper:AddRandomLoot("papyrus", 4)
             inst.components.lootdropper:AddRandomLoot("smallmeat", 4)
-            inst.components.lootdropper:AddRandomLoot("honey ", 4)
+            inst.components.lootdropper:AddRandomLoot("honey", 4)
             inst.components.lootdropper:AddRandomLoot("healingsalve", 4)
             inst.components.lootdropper:AddRandomLoot("manrabbit_tail", 4)
             inst.components.lootdropper:AddRandomLoot("pondfish", 4)

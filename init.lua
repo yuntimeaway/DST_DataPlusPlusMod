@@ -60,6 +60,11 @@ local prefabs_post =
     "merm",
     "knight_bishop",
     "rabbit",
+    "mole",
+    "tallbird",
+    "beefalo",
+    "koalefant",
+    "bee",
 
     --背包
     "backpack",

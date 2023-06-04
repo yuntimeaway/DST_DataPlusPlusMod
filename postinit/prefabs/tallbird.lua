@@ -1,30 +1,20 @@
 local env = env
-GLOBAL.setfenv(1, GLOBAL)
+GLOBAL.setfenv(1,GLOBAL)
 
 
-local function LootSetUpFunction(comp)
-    if comp == nil then
-        return
-    end
 
-    if math.random() < 0.5 then
-        comp:AddChanceLoot("froglegs",1)
-    else
-        comp:AddChanceLoot("pondfish",1)
-    end
-end
-
-env.AddPrefabPostInit("merm", function(inst)
+env.AddPrefabPostInit("tallbird", function(inst)
     if not TheWorld.ismastersim then
         return 
     end
 
     if inst.components.lootdropper ~= nil then
-        inst.components.lootdropper:SetLoot({})
-        inst.components.lootdropper:SetLootSetupFn(LootSetUpFunction)
-
         inst.components.lootdropper.numrandomloot = 1
         inst.components.lootdropper:AddRandomLoot("meat", 5)
+        inst.components.lootdropper:AddRandomLoot("meatballs", 5)
+        inst.components.lootdropper:AddRandomLoot("perogies", 5)
+        inst.components.lootdropper:AddRandomLoot("baconeggs", 5)
+        inst.components.lootdropper:AddRandomLoot("frogglebunwich", 5)
         inst.components.lootdropper:AddRandomLoot("goldnugget", 5)
         inst.components.lootdropper:AddRandomLoot("rocks", 5)
         inst.components.lootdropper:AddRandomLoot("silk", 5)
@@ -38,7 +28,8 @@ env.AddPrefabPostInit("merm", function(inst)
         inst.components.lootdropper:AddRandomLoot("twigs", 5)
         inst.components.lootdropper:AddRandomLoot("cutstone", 5)
         inst.components.lootdropper:AddRandomLoot("thulecite_pieces", 5)
-        inst.components.lootdropper:AddRandomLoot("featherpencil", 5)
+        inst.components.lootdropper:AddRandomLoot("featherpencil", 4)
+        inst.components.lootdropper:AddRandomLoot("torch", 5)
         inst.components.lootdropper:AddRandomLoot("green_cap", 5)
         inst.components.lootdropper:AddRandomLoot("red_cap", 5)
         inst.components.lootdropper:AddRandomLoot("blue_cap", 5)
@@ -84,10 +75,11 @@ env.AddPrefabPostInit("merm", function(inst)
         inst.components.lootdropper:AddRandomLoot("manrabbit_tail", 5)
         inst.components.lootdropper:AddRandomLoot("pondfish", 5)
 
-        inst.components.lootdropper:AddRandomLoot("nightmarefuel", 2)
-        inst.components.lootdropper:AddRandomLoot("livinglog", 2)
+        inst.components.lootdropper:AddRandomLoot("nightmarefuel", 2.5)
+        inst.components.lootdropper:AddRandomLoot("livinglog", 2.5)
         inst.components.lootdropper:AddRandomLoot("tentaclespike", 2)
         inst.components.lootdropper:AddRandomLoot("surfnturf", 2)
+        inst.components.lootdropper:AddRandomLoot("lobsterbisque", 2)
         inst.components.lootdropper:AddRandomLoot("meatysalad", 2)
         inst.components.lootdropper:AddRandomLoot("voltgoatjelly", 0.5)
         inst.components.lootdropper:AddRandomLoot("dragonpie", 2)
@@ -98,8 +90,11 @@ env.AddPrefabPostInit("merm", function(inst)
         inst.components.lootdropper:AddRandomLoot("walrushat", 1)
         inst.components.lootdropper:AddRandomLoot("eyebrellahat", 1)
         inst.components.lootdropper:AddRandomLoot("trunkvest_summer", 2)
+        inst.components.lootdropper:AddRandomLoot("trunkvest_winter", 2)
+        inst.components.lootdropper:AddRandomLoot("beargervest", 2)
         inst.components.lootdropper:AddRandomLoot("reflectivevest", 2)
         inst.components.lootdropper:AddRandomLoot("raincoat", 2)
+        inst.components.lootdropper:AddRandomLoot("malbatross_beak", 1)
         inst.components.lootdropper:AddRandomLoot("lantern", 2)
         inst.components.lootdropper:AddRandomLoot("featherfan", 1)
         inst.components.lootdropper:AddRandomLoot("thulecite", 2)
@@ -108,6 +103,8 @@ env.AddPrefabPostInit("merm", function(inst)
         inst.components.lootdropper:AddRandomLoot("orangegem", 0.5)
         inst.components.lootdropper:AddRandomLoot("yellowgem", 0.5)
         inst.components.lootdropper:AddRandomLoot("moonglass", 2)
+        inst.components.lootdropper:AddRandomLoot("chesspiece_pipe_moonglass", 3)
+        inst.components.lootdropper:AddRandomLoot("premiumwateringcan", 1)
         inst.components.lootdropper:AddRandomLoot("cane", 1)
         inst.components.lootdropper:AddRandomLoot("staff_tornado", 0.5)
         inst.components.lootdropper:AddRandomLoot("bundlewrap", 2)
@@ -124,19 +121,29 @@ env.AddPrefabPostInit("merm", function(inst)
         inst.components.lootdropper:AddRandomLoot("deerclops_eyeball", 1)
         inst.components.lootdropper:AddRandomLoot("tallbirdegg", 2)
         inst.components.lootdropper:AddRandomLoot("trap_teeth", 2)
-        inst.components.lootdropper:AddRandomLoot("trinket_3", 2)
-        inst.components.lootdropper:AddRandomLoot("trinket_17", 1.5)
+        inst.components.lootdropper:AddRandomLoot("trinket_1", 2)
+        inst.components.lootdropper:AddRandomLoot("trinket_22", 2)
         inst.components.lootdropper:AddRandomLoot("trunk_summer", 2.5)
         inst.components.lootdropper:AddRandomLoot("trunk_winter", 2.5)
+
+        inst.components.lootdropper:AddRandomLoot("opalpreciousgem", 0.1)
         inst.components.lootdropper:AddRandomLoot("ruins_bat", 0.5)
         inst.components.lootdropper:AddRandomLoot("nightsword", 0.5)
         inst.components.lootdropper:AddRandomLoot("glasscutter", 0.5)
         inst.components.lootdropper:AddRandomLoot("ruinshat", 0.4)
         inst.components.lootdropper:AddRandomLoot("armorruins", 0.4)
+        inst.components.lootdropper:AddRandomLoot("slurtlehat", 0.3)
+        inst.components.lootdropper:AddRandomLoot("hivehat", 0.3)
+        inst.components.lootdropper:AddRandomLoot("skeletonhat", 0.2)
+        inst.components.lootdropper:AddRandomLoot("armor_sanity", 0.5)
+        inst.components.lootdropper:AddRandomLoot("armorsnurtleshell", 0.3)
+        inst.components.lootdropper:AddRandomLoot("armordragonfly", 0.4)
+        inst.components.lootdropper:AddRandomLoot("armorskeleton", 0.2)
         inst.components.lootdropper:AddRandomLoot("krampus_sack", 0.1)
         inst.components.lootdropper:AddRandomLoot("orangestaff", 0.5)
         inst.components.lootdropper:AddRandomLoot("yellowstaff", 0.3)
         inst.components.lootdropper:AddRandomLoot("greenstaff", 0.2)
+        inst.components.lootdropper:AddRandomLoot("opalstaff", 0.1)
         inst.components.lootdropper:AddRandomLoot("orangeamulet", 0.4)
         inst.components.lootdropper:AddRandomLoot("yellowamulet", 0.3)
         inst.components.lootdropper:AddRandomLoot("greenamulet", 0.2)
@@ -149,4 +156,3 @@ env.AddPrefabPostInit("merm", function(inst)
         inst.components.lootdropper:AddRandomLoot("panflute", 0.5)
     end
 end)
-
