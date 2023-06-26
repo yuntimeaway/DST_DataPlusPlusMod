@@ -1,0 +1,22 @@
+msgid ""
+msgstr ""
+"Language: zh\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT Version: 2.0"
+
+
+#. STRINGS.NAMES.FRUITMEDLEY
+msgctxt "STRINGS.NAMES.FRUITMEDLEY"
+msgid "Fruit Medley"
+msgstr "水果拼盘"
+
+#. STRINGS.NAMES.POTATOTORNADO
+msgctxt "STRINGS.NAMES.POTATOTORNADO"
+msgid "Fancy Spiralled Tubers"
+msgstr "狼牙土豆"
+
+#. STRINGS.NAMES.PEPPERPOPPER
+msgctxt "STRINGS.NAMES.PEPPERPOPPER"
+msgid "Stuffed Pepper Poppers"
+msgstr "尖椒肉段"

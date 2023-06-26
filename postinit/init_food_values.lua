@@ -73,6 +73,12 @@ foods.barnaclestuffedfishhead.perishtime = TUNING.PERISH_MED
 --海鲜大排档
 foods.surfnturf.hunger = 80
 
+--水果圣代
+foods.fruitmedley.sanity = 15
+
+--爆炒填馅辣椒
+foods.pepperpopper.hunger = TUNING.CALORIES_LARGE
+foods.pepperpopper.cooktime = 1.25
 
 
 ------------------------------------------------------------------------------
@@ -137,8 +143,79 @@ local MeatAndVeggies =
     {
         edible = {healthvalue = 3,hungervalue = 0},
     },
-}
 
+    --种子
+    --胡萝卜种子
+    carrot_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --玉米种子
+    corn_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --南瓜种子
+    pumpkin_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --茄子种子
+    eggplant_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --榴莲种子
+    durian_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --石榴种子
+    pomegranate_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --火龙果种子
+    dragonfruit_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --西瓜种子
+    watermelon_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --番茄种子
+    tomato_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --土豆种子
+    potato_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --芦笋种子
+    asparagus_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --洋葱种子
+    onion_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --大蒜种子
+    garlic_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+    --辣椒种子
+    pepper_seeds =
+    {
+        edible = {hungervalue = 3},
+    },
+}
 
 
 ------------------------------------------------------------------------------
@@ -159,3 +236,6 @@ for ItemPrefabs, Comps in pairs(MeatAndVeggies) do
 end
 
 ------------------------------------------------------------------------------
+
+
+

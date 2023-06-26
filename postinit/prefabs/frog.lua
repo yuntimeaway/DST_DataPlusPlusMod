@@ -35,10 +35,10 @@ env.AddPrefabPostInit("frog", function(inst)
         inst.components.lootdropper:AddRandomLoot("pinecone", 5)
         inst.components.lootdropper:AddRandomLoot("acorn", 5)
         inst.components.lootdropper:AddRandomLoot("twiggy_nut", 5)
-        inst.components.lootdropper:AddRandomLoot("axe", 5)
 
         inst.components.lootdropper:AddRandomLoot("", 200)
 
+        inst.components.lootdropper:AddRandomLoot("axe", 5)
         inst.components.lootdropper:AddRandomLoot("pickaxe", 5)
         inst.components.lootdropper:AddRandomLoot("shovel", 5)
         inst.components.lootdropper:AddRandomLoot("blowdart_pipe", 5)

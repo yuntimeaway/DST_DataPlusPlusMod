@@ -53,7 +53,7 @@ env.AddPrefabPostInit("rabbit",function(inst)
     inst.components.lootdropper:AddRandomLoot("cutreeds", 5)
     inst.components.lootdropper:AddRandomLoot("smallmeat", 5)
     inst.components.lootdropper:AddRandomLoot("fishingrod", 5)
-    inst.components.lootdropper:AddRandomLoot("honey ", 5)
+    inst.components.lootdropper:AddRandomLoot("honey", 5)
     inst.components.lootdropper:AddRandomLoot("pondfish", 5)
 
     inst.components.lootdropper:AddRandomLoot("nightmarefuel", 1)
