@@ -4,7 +4,7 @@ name = "DataPlusPlus"
 author = "Fly & 墨"
 description = "调整饥荒内的多项数值，使难度稍微提升(仍然在合理范围以内)。\n\n该模组应该适用于饥荒进阶的玩家，受到了永不妥协模组的启发。"
 
-version = "0.0.7"
+version = "1.0.0"
 forumthrad = ""
 api_version = 10
 
